@@ -21,22 +21,22 @@ public class firstPage extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<title>Sample Form</title>");
+		out.println("<title>Login</title>");
 		out.println("</head>");
 		out.println("<body>");
 		out.println("<form name=\"myform\" method=\"GET\" action=\"FormServlet\">");
-		out.println("First Name <input type=\"text\" name=\"fname\" /><br />");
-		out.println("Last Name <input type=\text\" name=\"lname\" /><br />");
-		out.println("<input type=\"submit\" name=\"submit\" value=\"Submit\" />");
+		out.println("Username <input type=\"text\" name=\"uname\" /><br />");
+		out.println("Password <input type=\"text\" name=\"pass\" /><br />");
+		out.println("<input type=\"submit\" name=\"submit\" value=\"Login\" />");
 		out.println("</form>");
 		out.println("</body");
 		out.println("</html>");		
-				
+		out.close();
 	}
 }
