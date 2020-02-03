@@ -1,4 +1,4 @@
-package BackEnd;
+package backend;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class LoginPage
+ * Servlet implementation class firstPage
  */
-@WebServlet("/LoginPage")
-public class LoginPage extends HttpServlet {
+@WebServlet("/My_Mood")
+public class firstPage extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginPage() {
+    public firstPage() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,17 +28,6 @@ public class LoginPage extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-		String html = "<!DOCTYPE html>\r\n" + 
-				"<html>\r\n" + 
-				"  <head>\r\n" + 
-				"    <title>CSCI 201 CSS</title>\r\n" + 
-				"  </head>" +
-				"</html>";
-		
-		response.getWriter().append(html);
-		
-		//just tryna commit
 	}
 
 
